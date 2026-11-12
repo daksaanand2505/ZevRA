@@ -1,0 +1,17 @@
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+coverage/
+*.log
+
+# Local testing and audit files
+ZevRA-Audit.zip
+mongo-block-test.json
+mongo-test-intent.json
+test-body.json
+test-paypal-auth.js

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZevRA | Zero-Trust Payment Intent & Verification Engine</title>
+    <meta name="description" content="Professional fintech dashboard and zero-trust pre-capture verification engine with PayPal Sandbox integration." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN with configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace']
+            },
+            colors: {
+              slate: {
+                850: '#151c2e',
+                950: '#070b14'
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.25s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(4px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

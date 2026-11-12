@@ -40,8 +40,8 @@ async function startServer() {
     console.log("[ZevRA] Connecting to MongoDB Atlas before initializing HTTP listener...");
     await connectDB();
 
-    app.listen(port, () => {
-      console.log(`ZevRA backend listening on http://localhost:${port}`);
+    app.listen(port, "0.0.0.0", () => {
+      console.log(`ZevRA backend listening on http://0.0.0.0:${port}`);
     });
   } catch (error) {
     console.error("[ZevRA] Critical startup failure: Could not establish database connection.");

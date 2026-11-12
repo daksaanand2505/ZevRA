@@ -1,6 +1,6 @@
 /**
  * ZevRA Payment API Client
- * Connects to the Node.js + Express backend at http://localhost:5000
+ * Connects to the Node.js + Express backend using VITE_API_BASE_URL or localhost fallback
  * Uses existing backend routes without exposing any PayPal credentials.
  */
 

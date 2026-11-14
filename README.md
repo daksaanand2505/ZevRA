@@ -165,10 +165,6 @@ AI_API_URL=
 AI_API_KEY=
 ```
 
-Replace the placeholders with your own credentials.
-
-**Security:** Never upload `.env`, PayPal secrets, database credentials, or API keys to GitHub.
-
 ### 5. Start the Backend
 
 From the project root:
